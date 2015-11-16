@@ -47,7 +47,7 @@ public class HomeController {
 		try{
 			String cur_dir = System.getProperty("user.dir");	
 			System.out.println("Directory"+cur_dir);
-		File file=new File("C:/Users/user/Documents/workspace-sts-3.6.4.RELEASE/RishiReddy_Bokka_Document_Retrieval" +"\\query.txt");
+		File file=new File("C:/Users/RishiReddy/Documents/GitHub/Document-Retrieval/RishiReddy_Bokka_Document_Retrieval" +"\\query.txt");
 		if (!file.exists()) {
 			file.createNewFile();
 		}

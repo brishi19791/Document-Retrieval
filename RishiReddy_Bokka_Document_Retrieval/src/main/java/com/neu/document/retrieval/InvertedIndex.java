@@ -24,7 +24,7 @@ public class InvertedIndex {
     public TreeMap<String, Integer> doc_token_count = new TreeMap();
     public  InvertedIndex() throws FileNotFoundException, IOException, ClassNotFoundException {
 // code to iterate over all the files in a given folder
-        File folder = new File("C:\\Users\\user\\Documents\\workspace-sts-3.6.4.RELEASE\\RishiReddy_Bokka_Document_Retrieval\\Dataset_Algorithms");
+        File folder = new File("C:/Users/RishiReddy/Documents/GitHub/Document-Retrieval/RishiReddy_Bokka_Document_Retrieval/Dataset_Algorithms");
         File[] listOfFiles = folder.listFiles();
 //code to load 
         for (File file : listOfFiles) {
@@ -49,7 +49,7 @@ public class InvertedIndex {
                 StringTokenizer stk = new StringTokenizer(text, ". ?,:=;!@#$%^&*()_+{}-/|\"\'~`");
                 int i = 0;
                 Set<String> stopWords = new LinkedHashSet<String>();
-                BufferedReader br = new BufferedReader(new FileReader("C:/Users/user/Documents/workspace-sts-3.6.4.RELEASE/RishiReddy_Bokka_Document_Retrieval/stopwords.txt"));
+                BufferedReader br = new BufferedReader(new FileReader("C:/Users/RishiReddy/Documents/GitHub/Document-Retrieval/RishiReddy_Bokka_Document_Retrieval/stopwords.txt"));
                 for (String line; (line = br.readLine()) != null;) {
                     stopWords.add(line.toLowerCase().trim());
                 }
@@ -98,7 +98,7 @@ public class InvertedIndex {
         diplay2(
                 (TreeMap<String, TreeMap<String, Integer>>) inv_index);
         display3();
-        String cur_dir ="C:\\Users\\user\\Documents\\workspace-sts-3.6.4.RELEASE\\RishiReddy_Bokka_Document_Retrieval";
+        String cur_dir ="C:\\Users\\RishiReddy\\Documents\\GitHub\\Document-Retrieval\\RishiReddy_Bokka_Document_Retrieval";
         FileOutputStream fileOut = new FileOutputStream(cur_dir + "\\index.out");
         ObjectOutputStream out = new ObjectOutputStream(fileOut);
         out.writeObject(inv_index);

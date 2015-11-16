@@ -35,7 +35,7 @@ public class BM25 {
 
 	    	//reads inverted iindex file and stores in a treemap.
 	        int count = Integer.parseInt(num);
-	        String cur_dir ="C:\\Users\\user\\Documents\\workspace-sts-3.6.4.RELEASE\\RishiReddy_Bokka_Document_Retrieval";
+	        String cur_dir ="C:\\Users\\RishiReddy\\Documents\\GitHub\\Document-Retrieval\\RishiReddy_Bokka_Document_Retrieval";
 	        FileInputStream fileIn = new FileInputStream(cur_dir + "\\" + indexfile);
 	        ObjectInputStream in = new ObjectInputStream(fileIn);
 	        invertedindex = (TreeMap) in.readObject();
