@@ -8,4 +8,4 @@ Document rerieval from corpus using BM25 algorithm.
 - This index.out will have all the root words in it and serve as input for BM25 algorithm.
 
 
-This project is created a spring project and should be run on application server.
+This project is created as a Spring project and should be run on application server.
